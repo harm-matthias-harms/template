@@ -11,12 +11,8 @@
   "packageRules": [
     {
       "matchUpdateTypes": [
-        "minor",
         "patch",
-        "pin",
-        "digest",
-        "pinDigest",
-        "lockFileMaintenance"
+        "pin"
       ],
       "automerge": true
     }
