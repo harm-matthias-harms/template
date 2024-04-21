@@ -1,20 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ],
-  "reviewers": [
-    "harm-matthias-harms"
-  ],
-  "prHourlyLimit": 0,
-  "prConcurrentLimit": 0,
-  "packageRules": [
-    {
-      "matchUpdateTypes": [
-        "patch",
-        "pin"
-      ],
-      "automerge": true
-    }
-  ]
+  "extends": ["config:recommended", ":automergePatch", ":prHourlyLimitNone", ":prConcurrentLimitNone", ":pinDependencies", ":maintainLockFilesMonthly"],
+  "reviewers": ["harm-matthias-harms"]
 }
